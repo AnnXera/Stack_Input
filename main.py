@@ -23,7 +23,7 @@ for index in range(len(stacks)):
     else:
         result = result + stacks[index] + ', '
 
-while True:
+while stacks:
     ask_remove = input('Click R to remove an item: ')
     if ask_remove == 'R':
         if stacks:
@@ -45,6 +45,3 @@ while True:
                 print(f'You have stacks {result}.')
             else:
                 print('You do not have any item left on your stack.')
-                break
-    else:
-        continue
